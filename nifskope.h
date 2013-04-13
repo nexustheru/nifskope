@@ -95,7 +95,7 @@ public:
 	 * \param settings The QSettings object used to store the settings.
 	 */
 	void save( QSettings & settings ) const;
-
+	
 	//! Restore NifSkope application settings. 
 	/*!
 	 * \param settings The QSettings object to restore the settings from.

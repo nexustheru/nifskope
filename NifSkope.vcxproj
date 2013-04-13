@@ -1,0 +1,1181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51D4C076-4B44-3F00-A88E-03835B385973}</ProjectGuid>
+    <RootNamespace>NifSkope</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>NifSkope</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>NifSkope</PrimaryOutput>
+    <PlatformToolset>v90</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NifSkope</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\..\Program Files %28x86%29\NifTools\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NifSkope</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtCore;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtXml;$(QTDIR)\include;$(QTDIR)\include\ActiveQt;debug;.;$(QTDIR)\mkspecs\default;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;NIFSKOPE_VERSION=\"1.1.3\";FSENGINE;EDIT_ON_ACTIVATE;QT_THREAD_SUPPORT;QT_DLL;QT_XML_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;Ws2_32.lib;imm32.lib;glu32.lib;opengl32.lib;gdi32.lib;user32.lib;$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\QtXmld4.lib;$(QTDIR)\lib\QtOpenGLd4.lib;$(QTDIR)\lib\QtGuid4.lib;$(QTDIR)\lib\QtNetworkd4.lib;$(QTDIR)\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\NifSkope.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;NIFSKOPE_VERSION=\"1.1.3\";FSENGINE;EDIT_ON_ACTIVATE;QT_THREAD_SUPPORT;QT_DLL;QT_XML_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.3\include;C:\Qt\4.8.3\include\QtCore;C:\Qt\4.8.3\include\QtNetwork;C:\Qt\4.8.3\include\QtGui;C:\Qt\4.8.3\include\QtOpenGL;C:\Qt\4.8.3\include\QtXml;C:\Qt\4.8.3\include\ActiveQt;C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release;C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles;.;C:\Qt\4.8.3\mkspecs\default;C:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a;.\GeneratedFiles;C:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include;C:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;NIFSKOPE_VERSION=\"1.1.3\";FSENGINE;EDIT_ON_ACTIVATE;QT_THREAD_SUPPORT;QT_DLL;QT_NO_DEBUG;QT_XML_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;Ws2_32.lib;imm32.lib;glu32.lib;opengl32.lib;gdi32.lib;user32.lib;qtmain.lib;QtXml4.lib;QtOpenGL4.lib;QtGui4.lib;QtNetwork4.lib;QtCore4.lib;fbxsdk-2013.3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\4.8.3\lib;C:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\lib\vs2008\x86;C:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Lib\win32_net_9-0\release_multithreaded_dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\NifSkope.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ShowProgress>LinkVerbose</ShowProgress>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;NIFSKOPE_VERSION=\"1.1.3\";FSENGINE;EDIT_ON_ACTIVATE;QT_THREAD_SUPPORT;QT_DLL;QT_NO_DEBUG;QT_XML_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Debug\moc_about_dialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_basemodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_colorwheel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_copyfnam.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_fileselect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_floatedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_floatslider.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_fsmanager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_gltex.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_glview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_inspect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_kfmmodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifcheckboxlist.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifeditors.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifmodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifproxy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifskope.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_options.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_refrbrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_skeleton.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_spellbook.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_stringpalette.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_texture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_uvedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_valueedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_xmlcheck.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="fbx.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_nifskope.cpp" />
+    <ClCompile Include="NvTriStrip\NvTriStrip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NvTriStrip\NvTriStripObjects.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NvTriStrip\VertexCache.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NvTriStrip\qtwrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fsengine\bsa.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fsengine\fsengine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fsengine\fsmanager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\BlockDXT.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\ColorBlock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\DirectDrawSurface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\Image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\Stream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\dds_api.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\GLee.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glcontroller.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glmarker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glmesh.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glnode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glparticles.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glproperty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glscene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\gltex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\gltexloaders.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\gltools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\renderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="importex\3ds.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="importex\col.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="importex\importex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="importex\obj.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Release\moc_about_dialog.cpp" />
+    <ClCompile Include="Release\moc_basemodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_colorwheel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_copyfnam.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_fileselect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_floatedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_floatslider.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_fsmanager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_gltex.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_glview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_inspect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_kfmmodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifcheckboxlist.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifeditors.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifmodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifproxy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifskope.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_options.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_refrbrowser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_skeleton.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_spellbook.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_stringpalette.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_texture.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_uvedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_valueedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_xmlcheck.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="spells\animation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\blocks.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\bounds.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\color.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\flags.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\fo3only.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\havok.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\headerstring.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\light.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\material.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\mesh.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\misc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\moppcode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\morphctrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\normals.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\optimize.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\sanitize.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\skeleton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\stringpalette.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\strippify.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\tangentspace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ui\about_dialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\colorwheel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\copyfnam.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\fileselect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\floatedit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\floatslider.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\groupbox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\inspect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\nifcheckboxlist.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\nifeditors.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\nifview.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\refrbrowser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\uvedit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\valueedit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\xmlcheck.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="basemodel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glview.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kfmmodel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kfmxml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="message.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifdelegate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifexpr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifmodel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifproxy.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifskope.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="niftypes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifvalue.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifxml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="options.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qhull.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spellbook.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_about_dialog.h" />
+    <ClInclude Include="GeneratedFiles\ui_nifskope.h" />
+    <ClInclude Include="NvTriStrip\NvTriStrip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NvTriStrip\NvTriStripObjects.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NvTriStrip\VertexCache.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NvTriStrip\qtwrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fsengine\bsa.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fsengine\fsengine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="fsengine\fsmanager.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing fsmanager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing fsmanager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\BlockDXT.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\Color.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\ColorBlock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\Common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\DirectDrawSurface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\Image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\PixelFormat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\Stream.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\dds_api.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\marker\constraints.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\marker\furniture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\GLee.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glcontrolable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glcontroller.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glmarker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glmesh.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glnode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glparticles.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glproperty.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glscene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gl\gltex.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing gltex.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing gltex.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\gltexloaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\gltools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\renderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="importex\3ds.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\geom.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\io.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\libqhull.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\mem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\merge.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\poly.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\qhull_a.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\qset.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\random.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\stat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\user.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\blocks.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\mesh.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\misc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="spells\skeleton.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing skeleton.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing skeleton.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="spells\stringpalette.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing stringpalette.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing stringpalette.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\tangentspace.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="spells\texture.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing texture.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing texture.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\transform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\about_dialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing about_dialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing about_dialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\colorwheel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing colorwheel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing colorwheel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\copyfnam.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing copyfnam.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing copyfnam.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\fileselect.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing fileselect.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing fileselect.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\floatedit.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing floatedit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing floatedit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\floatslider.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing floatslider.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing floatslider.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="widgets\groupbox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\inspect.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing inspect.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing inspect.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\nifcheckboxlist.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing nifcheckboxlist.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing nifcheckboxlist.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\nifeditors.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing nifeditors.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing nifeditors.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\nifview.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing nifview.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing nifview.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\refrbrowser.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing refrbrowser.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing refrbrowser.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\uvedit.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing uvedit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing uvedit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\valueedit.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing valueedit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing valueedit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\xmlcheck.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing xmlcheck.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing xmlcheck.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="basemodel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing basemodel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing basemodel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="glview.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing glview.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing glview.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hacking.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="kfmmodel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing kfmmodel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing kfmmodel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="message.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nifexpr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nifitem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nifmodel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing nifmodel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing nifmodel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nifproxy.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing nifproxy.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing nifproxy.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nifskope.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing nifskope.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing nifskope.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="niftypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nifvalue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="options.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing options.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing options.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="spellbook.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2  "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include" "-I$(QTDIR)\include\ActiveQt" "-I.\debug" "-I." "-I$(QTDIR)\mkspecs\default" "-I.\GeneratedFiles"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing spellbook.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DNIFSKOPE_VERSION=\\"1.1.3\\" -DFSENGINE -DEDIT_ON_ACTIVATE -DQT_THREAD_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_XML_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DNDEBUG  "-IC:\Qt\4.8.3\include" "-IC:\Qt\4.8.3\include\QtCore" "-IC:\Qt\4.8.3\include\QtNetwork" "-IC:\Qt\4.8.3\include\QtGui" "-IC:\Qt\4.8.3\include\QtOpenGL" "-IC:\Qt\4.8.3\include\QtXml" "-IC:\Qt\4.8.3\include\ActiveQt" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\Release" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a\GeneratedFiles" "-I." "-IC:\Qt\4.8.3\mkspecs\default" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\Projects\amorilia-nifskope-aec127a" "-I.\GeneratedFiles" "-IC:\Users\esmeralda\Documents\Visual Studio 2010\2013.3 fbx\include" "-IC:\Users\esmeralda\Documents\Visual Studio 2008\hk2010_2_0_r1\Source"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing spellbook.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\icon.res">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\qrc_nifskope.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="release\icon.res">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="release\qrc_nifskope.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lang\NifSkope_de.ts" />
+    <CustomBuild Include="ui\nifskope.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lang\NifSkope_fr.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\about_dialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_flip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_pers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_walk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\havok_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\img_flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\img_link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\img_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\qhull_cone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spells\skel.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nifskope.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nifskope.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);.\nifskope.png;.\spells\skel.dat;.\resources\arrow_left.png;.\resources\arrow_right.png;.\resources\img_update.png;.\resources\img_link.png;.\resources\img_flag.png;.\resources\havok_logo.png;.\resources\qhull_cone.gif;.\resources\button_play.png;.\resources\button_loop.png;.\resources\button_switch.png;.\resources\button_view_top.png;.\resources\button_view_front.png;.\resources\button_view_side.png;.\resources\button_view_walk.png;.\resources\button_view_user.png;.\resources\button_view_flip.png;.\resources\button_view_pers.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);.\nifskope.png;.\spells\skel.dat;.\resources\arrow_left.png;.\resources\arrow_right.png;.\resources\img_update.png;.\resources\img_link.png;.\resources\img_flag.png;.\resources\havok_logo.png;.\resources\qhull_cone.gif;.\resources\button_play.png;.\resources\button_loop.png;.\resources\button_switch.png;.\resources\button_view_top.png;.\resources\button_view_front.png;.\resources\button_view_side.png;.\resources\button_view_walk.png;.\resources\button_view_user.png;.\resources\button_view_flip.png;.\resources\button_view_pers.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties QtVersion_x0020_Win32="4.8.3" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

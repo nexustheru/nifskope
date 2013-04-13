@@ -36,7 +36,6 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "../widgets/nifview.h"
 #include "../nifproxy.h"
 #include "../nifmodel.h"
-
 #include <QMenu>
 #include <QModelIndex>
 #include <QDockWidget>
@@ -46,15 +45,18 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 void exportObj( const NifModel * nif, const QModelIndex & index );
 void exportCol( const NifModel * nif, QFileInfo );
 void importObj( NifModel * nif, const QModelIndex & index );
+void importFbx( NifModel * nif, const QModelIndex & index );
 void import3ds( NifModel * nif, const QModelIndex & index );
-
+void exportFbx( const NifModel * nif, const QModelIndex & index );
 
 void NifSkope::fillImportExportMenus()
 {
 	mExport->addAction( tr( "Export .OBJ" ) );
 	mExport->addAction( tr( "Export .DAE" ) );
+	mExport->addAction( tr( "Export .FBX" ) );
 	mImport->addAction( tr( "Import .3DS" ) );
 	mImport->addAction( tr( "Import .OBJ" ) );
+	mImport->addAction( tr( "Import .FBX" ) );
 }
 
 void NifSkope::sltImportExport( QAction * a )
@@ -90,8 +92,12 @@ void NifSkope::sltImportExport( QAction * a )
 		exportObj( nif, index );
 	else if ( a->text() == tr( "Import .OBJ" ) )
 		importObj( nif, index );
+	else if ( a->text() == tr( "Import .FBX" ) )
+		importFbx( nif, index );
 	else if ( a->text() == tr( "Import .3DS" ) )
 		import3ds( nif, index );
+	else if ( a->text() == tr( "Export .FBX" ) )
+		exportFbx( nif, index );
 	else if ( a->text() == tr( "Export .DAE" ) )
 		exportCol( nif, this->getLoadFileName() );
 }

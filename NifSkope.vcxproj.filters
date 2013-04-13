@@ -1,0 +1,1277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\NvTriStrip" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NvTriStrip\NvTriStrip.cpp">
+      <Filter>Source Files\NvTriStrip</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_basemodel.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_basemodel.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_glview.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_glview.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_kfmmodel.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_kfmmodel.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifmodel.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifmodel.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifproxy.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifproxy.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifskope.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_options.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_options.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_spellbook.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_spellbook.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_fsmanager.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_fsmanager.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_gltex.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_gltex.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_skeleton.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_skeleton.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_stringpalette.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_stringpalette.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_texture.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_texture.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_about_dialog.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_colorwheel.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_colorwheel.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_copyfnam.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_copyfnam.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_fileselect.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_fileselect.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_floatedit.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_floatedit.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_floatslider.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_floatslider.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_inspect.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_inspect.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifcheckboxlist.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifcheckboxlist.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifeditors.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifeditors.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_nifview.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifview.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_refrbrowser.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_refrbrowser.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_uvedit.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_uvedit.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_valueedit.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_valueedit.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_xmlcheck.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_xmlcheck.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_nifskope.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_about_dialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_nifskope.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fbx.cpp">
+      <Filter>Source Files\importex</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NvTriStrip\NvTriStripObjects.cpp">
+      <Filter>Source Files\NvTriStrip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NvTriStrip\VertexCache.cpp">
+      <Filter>Source Files\NvTriStrip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NvTriStrip\qtwrapper.cpp">
+      <Filter>Source Files\NvTriStrip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\fsengine" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fsengine\bsa.cpp">
+      <Filter>Source Files\fsengine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fsengine\fsengine.cpp">
+      <Filter>Source Files\fsengine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fsengine\fsmanager.cpp">
+      <Filter>Source Files\fsengine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\gl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\gl\dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\BlockDXT.cpp">
+      <Filter>Source Files\gl\dds</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\ColorBlock.cpp">
+      <Filter>Source Files\gl\dds</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\DirectDrawSurface.cpp">
+      <Filter>Source Files\gl\dds</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\Image.cpp">
+      <Filter>Source Files\gl\dds</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\Stream.cpp">
+      <Filter>Source Files\gl\dds</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\dds\dds_api.cpp">
+      <Filter>Source Files\gl\dds</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\GLee.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glcontroller.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glmarker.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glmesh.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glnode.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glparticles.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glproperty.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\glscene.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\gltex.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\gltexloaders.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\gltools.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\renderer.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\importex" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="importex\3ds.cpp">
+      <Filter>Source Files\importex</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="importex\col.cpp">
+      <Filter>Source Files\importex</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="importex\importex.cpp">
+      <Filter>Source Files\importex</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="importex\obj.cpp">
+      <Filter>Source Files\importex</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\spells" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\animation.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\blocks.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\bounds.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\color.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\flags.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\fo3only.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\havok.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\headerstring.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\light.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\material.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\mesh.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\misc.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\moppcode.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\morphctrl.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\normals.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\optimize.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\sanitize.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\skeleton.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\stringpalette.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\strippify.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\tangentspace.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\texture.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spells\transform.cpp">
+      <Filter>Source Files\spells</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ui\about_dialog.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\widgets" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\colorwheel.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\copyfnam.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\fileselect.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\floatedit.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\floatslider.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\groupbox.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\inspect.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\nifcheckboxlist.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\nifeditors.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\nifview.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\refrbrowser.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\uvedit.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\valueedit.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widgets\xmlcheck.cpp">
+      <Filter>Source Files\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="basemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kfmmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kfmxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifexpr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifskope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="niftypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifvalue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nifxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qhull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="spellbook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\NvTriStrip" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NvTriStrip\NvTriStrip.h">
+      <Filter>Header Files\NvTriStrip</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_about_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_nifskope.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NvTriStrip\NvTriStripObjects.h">
+      <Filter>Header Files\NvTriStrip</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NvTriStrip\VertexCache.h">
+      <Filter>Header Files\NvTriStrip</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NvTriStrip\qtwrapper.h">
+      <Filter>Header Files\NvTriStrip</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\fsengine" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fsengine\bsa.h">
+      <Filter>Header Files\fsengine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fsengine\fsengine.h">
+      <Filter>Header Files\fsengine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="fsengine\fsmanager.h">
+      <Filter>Header Files\fsengine</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\nifskope.ui">
+      <Filter>Form Files\ui</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\gl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\gl\dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\BlockDXT.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\Color.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\ColorBlock.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\Common.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\DirectDrawSurface.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\Image.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\PixelFormat.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\Stream.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\dds\dds_api.h">
+      <Filter>Header Files\gl\dds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\gl\marker" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\marker\constraints.h">
+      <Filter>Header Files\gl\marker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\marker\furniture.h">
+      <Filter>Header Files\gl\marker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\GLee.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glcontrolable.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glcontroller.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glmarker.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glmesh.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glnode.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glparticles.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glproperty.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\glscene.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gl\gltex.h">
+      <Filter>Header Files\gl</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\gltexloaders.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\gltools.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gl\renderer.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\importex" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="importex\3ds.h">
+      <Filter>Header Files\importex</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\qhull" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\qhull\src" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\qhull\src\libqhull" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\geom.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\io.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\libqhull.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\mem.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\merge.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\poly.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\qhull_a.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\qset.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\random.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\stat.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull\src\libqhull\user.h">
+      <Filter>Header Files\qhull\src\libqhull</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\spells" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\blocks.h">
+      <Filter>Header Files\spells</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\mesh.h">
+      <Filter>Header Files\spells</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\misc.h">
+      <Filter>Header Files\spells</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="spells\skeleton.h">
+      <Filter>Header Files\spells</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="spells\stringpalette.h">
+      <Filter>Header Files\spells</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\tangentspace.h">
+      <Filter>Header Files\spells</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="spells\texture.h">
+      <Filter>Header Files\spells</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spells\transform.h">
+      <Filter>Header Files\spells</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\about_dialog.h">
+      <Filter>Header Files\ui</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\widgets" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\colorwheel.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\copyfnam.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\fileselect.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\floatedit.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\floatslider.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="widgets\groupbox.h">
+      <Filter>Header Files\widgets</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\inspect.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\nifcheckboxlist.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\nifeditors.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\nifview.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\refrbrowser.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\uvedit.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\valueedit.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="widgets\xmlcheck.h">
+      <Filter>Header Files\widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="basemodel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="glview.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hacking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="kfmmodel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nifexpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nifitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nifmodel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nifproxy.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nifskope.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="niftypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nifvalue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="options.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qhull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="spellbook.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Generated Files\debug" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\icon.res">
+      <Filter>Generated Files\debug</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\qrc_nifskope.cpp">
+      <Filter>Generated Files\debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Generated Files\release" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="release\icon.res">
+      <Filter>Generated Files\release</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="release\qrc_nifskope.cpp">
+      <Filter>Generated Files\release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Translation Files\lang" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lang\NifSkope_de.ts">
+      <Filter>Translation Files\lang</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lang\NifSkope_fr.ts">
+      <Filter>Translation Files\lang</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Form Files\ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\about_dialog.ui">
+      <Filter>Form Files\ui</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource Files\resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\arrow_left.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\arrow_right.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_loop.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_play.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_switch.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_flip.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_front.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_pers.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_side.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_top.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_user.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\button_view_walk.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\havok_logo.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\img_flag.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\img_link.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\img_update.png">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\qhull_cone.gif">
+      <Filter>Resource Files\resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource Files\spells" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spells\skel.dat">
+      <Filter>Resource Files\spells</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nifskope.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nifskope.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>
